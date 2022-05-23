@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a Javascript</title>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+    <form action="#" onsubmit="return false">
+        <label for="matematica">Nota de matematica: </label>
+        <input type="text" name="matematica" id="matematica">
+        <br><br>
+        <label for="lengua">Nota de lengua: </label>
+        <input type="text" name="lengua" id="lengua">
+        <br><br>
+        <label for="efsi">Nota de efsi: </label>        
+        <input type="text" name="efsi" id="efsi">
+        <br><br>
+        <button onclick="checkInputs();" id="envio">Enviar</button>
+        <button onclick="promediar();" id="promedio">Promediar</button>
+        <button onclick="mayorNumero();" id="mayor">Nota Mayor</button>
+    </form>
+</body>
+</html>
