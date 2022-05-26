@@ -8,15 +8,26 @@ input.addEventListener("keydown", function(event) {
 
 var i = 0;
 function crearNota (nota) {
-    i++;
-    var notaInput = document.createElement("input");
-    notaInput.setAttribute("type", "checkbox");
-    notaInput.setAttribute("nota" + i, "checkbox");
-    
-    var notaLabel = document.createElement("label");
-    notaLabel.setAttribute("for", 'checkbox');
-    notaLabel.innerHTML = nota;
+    if (nota === '') {
+        alert("No puedes crear una nota vacía.");
+    } else {
+        i++;
+        var notaDiv = document.createElement("div");
+        notaDiv.setAttribute("class", "notaDiv");
 
-    document.getElementById("card").appendChild(notaInput);
-    document.getElementById("card").appendChild(notaLabel);
+        var notaInput = document.createElement("input");
+        notaInput.setAttribute("type", "checkbox");
+        notaInput.setAttribute("class", "notaInput")
+        notaInput.setAttribute("id", "nota");
+        
+        var notaLabel = document.createElement("label");
+        notaLabel.setAttribute("for", 'nota');
+        notaLabel.setAttribute("class", 'notaLabel');
+        notaLabel.setAttribute("id", 'nota')
+        notaLabel.innerHTML = nota;
+
+        notaDiv.appendChild(notaInput);
+        notaDiv.appendChild(notaLabel);
+        document.getElementById("card").appendChild(notaDiv);
+    }
 }
