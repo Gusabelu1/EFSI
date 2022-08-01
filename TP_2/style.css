@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+* {
+    font-family: 'Kanit', sans-serif;    font-weight: 800;
+    font-weight: 800;
+}
+
+body {
+    background-color: #eee!important;
+    padding: 0;
+}
+
+.card {
+    min-height: 30rem;
+}
+
+.notaDiv {
+    display: block;
+    margin-top: 1.5rem;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+#crearNota {
+    width: 50rem;
+    height: 3rem;
+    border: 0;
+}
+
+.notaInput:checked + .notaLabel {
+    text-decoration: line-through;
+    color: rgba(78, 78, 78, 0.5)
+}
+
+.notaLabel {
+    margin-left: 1rem;
+    font-size: 25px;
+}
+
+.borrar {
+    float: right;
+    margin-top: 12.5px;
+    color: red;
+    transform: scale(125%);
+    cursor: pointer;
+}
+
+.fechaLabel {
+    float: right;
+    margin-top: 7.5px;
+    margin-right: 50px;
+}

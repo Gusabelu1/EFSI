@@ -1,0 +1,53 @@
+.container {
+  max-width: 1300px;
+}
+
+.cardsTitle {
+  color: #039be5;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.header-campus {
+  background: #FFF;
+}
+
+.header-campus .navbar{
+  background: #FFF;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.header-campus .navbar .navbar-nav {
+  line-height: 50px;  
+}
+
+.header-campus .campus-logo {
+  width: 130px;
+  height: 50px;
+}
+
+.header-campus .navbar-nav .nav-link {
+  color: #888;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.header-campus .nav-link:hover {
+  background: #DDD;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 5px 0 #888;
+}
+
+.campus-boxes .card-header {
+  color: #039be5;
+  background-color: #FFF;
+  font-size: 19px;
+  border-radius: 0;
+}
+
+.campus-boxes {
+  border-radius: 0;
+}

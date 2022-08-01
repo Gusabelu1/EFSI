@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+:root {
+    --primaryColor: rgb(172, 191, 195);
+}
+
+.card {
+    transition: .3s;
+    max-width: 105%;
+}
+
+.card:hover {
+    background-color: var(--primaryColor);
+}
+
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.carousel-caption {
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+#Marcas {
+    margin: 35px 0 35px 0;
+    border-top: 10px solid var(--primaryColor);
+}
+
+footer {
+    background-color: rgb(51, 51, 51);
+    
+}
