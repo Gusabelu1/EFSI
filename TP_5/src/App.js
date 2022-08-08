@@ -5,13 +5,7 @@ import Form from './Form.js';
 import Card from './Card.js';
 
 function App() {
-  const [citas, setCitas] = useState([{
-    mascota: "si",
-    owner: "no",
-    fecha: "1810-05-25",
-    hora: "04:20",
-    sintomas: "Se fumo alto porro"
-  }])
+  const [citas, setCitas] = useState([])
 
   return (
     <div className="App">

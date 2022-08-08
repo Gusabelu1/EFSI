@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-function Formm({setCitas}) {
+export default function Formm({setCitas}) {
   const [nomMascota, setNomMascota] = useState('');
   const [nomDueno, setNomDueno] = useState('');
   const [fecha, setFecha] = useState('');
@@ -26,7 +26,7 @@ function Formm({setCitas}) {
   }
 
   return (
-    <Form onSubmit={handleSubmit()}>
+    <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicText">
         <Form.Label>Nombre Mascota</Form.Label>
         <Form.Control type="text" placeholder="Nombre Mascota" onChange={e => setNomMascota(e.target.value)} value={nomMascota}/>
@@ -62,5 +62,3 @@ function Formm({setCitas}) {
     </Form>
   );
 }
-
-export default Formm;
